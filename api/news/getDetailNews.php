@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
         echo json_encode(['msg' => 'News Not Found', 'status' => false, 'des' => 'There are no published news slug: ' . $slug . '.']);
         exit();
     }
-    $data['image'] = 'http://localhost/Project/NewsToday/upload/news/' . $data['image'];
+    $data['image'] = 'https://phpstack-1546894-5983648.cloudwaysapps.com/upload/news/' . $data['image'];
     echo json_encode(['data' => $data, 'status' => true, 'des' => '']);
     $stmt = $connect->prepare("UPDATE news SET views = views + 1 WHERE category_id = ? AND slug = ?");
     $stmt->bind_param('is', $cateid, $slug);
