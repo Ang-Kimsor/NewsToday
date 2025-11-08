@@ -1,0 +1,75 @@
+/* Card hover effects */
+.summary-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Soft colored backgrounds */
+.bg-primary-soft {
+  background-color: rgba(0, 49, 110, 0.1);
+}
+
+.bg-success-soft {
+  background-color: rgba(28, 200, 138, 0.1);
+}
+
+.bg-warning-soft {
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+.bg-info-soft {
+  background-color: rgba(13, 202, 240, 0.1);
+}
+
+.bg-danger-soft {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.card-header {
+  font-weight: 600;
+}
+
+.dashboard-card {
+  height: 100%;
+}
+
+.dashboard-card h6 {
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.dashboard-card h3 {
+  font-weight: 700;
+}
+
+.dashboard-card i {
+  opacity: 0.75;
+}
+
+.list-group-item {
+  cursor: default;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .summary-card {
+    padding: 2rem 1rem;
+  }
+
+  .dashboard-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .dashboard-card h6 {
+    font-size: 0.85rem;
+  }
+
+  canvas {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
