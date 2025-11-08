@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
                 ";
     $result = $connect->query($stmt);
     if ($data = $result->fetch_assoc()) {
-        $data['image'] = 'http://localhost/Project/NewsToday/upload/news/' . $data['image'];
+        $data['image'] = 'https://phpstack-1546894-5983648.cloudwaysapps.com/upload/news/' . $data['image'];
         echo json_encode(['data' => $data, 'status' => true, 'des' => '']);
     } else
         echo json_encode(['msg' => 'News Not Found', 'status' => false, 'des' => 'There are no active news.']);
