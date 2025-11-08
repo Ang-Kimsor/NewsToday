@@ -2,7 +2,8 @@
 $user_timezone = new DateTimeZone('Asia/Phnom_Penh');
 $now = new DateTime('now', $user_timezone);
 mysqli_report(MYSQLI_REPORT_OFF);
-$connect = @new mysqli('localhost', 'root', '', 'newstoday');
+// $connect = @new mysqli('localhost', 'root', '', 'newstoday');
+$connect = @new mysqli('127.0.0.1', 'utngydbkpg', 'Ktx73fDVjY', 'utngydbkpg');
 // $connect = @new mysqli('sql202.infinityfree.com', 'if0_40365026', '37NWAcVcLlUYm', 'if0_40365026_newstoday');
 
 if ($connect->connect_error) {
