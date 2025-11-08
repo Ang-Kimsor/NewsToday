@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
     while ($data = $result->fetch_assoc()) {
         $cate = $data['categoryname'];
         $slug = $data['categoryslug'];
-        $data['image'] = 'http://localhost/Project/NewsToday/upload/news/' . $data['image'];
+        $data['image'] = 'https://phpstack-1546894-5983648.cloudwaysapps.com/upload/news/' . $data['image'];
         $row[] = $data;
     }
     echo json_encode(['data' => $row, 'status' => true, 'des' => '', 'category' => $cate, 'slug' => $slug]);
