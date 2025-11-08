@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == "GET") {
     }
     $row = [];
     while ($data = $result->fetch_assoc()) {
-        $data['image'] = 'http://localhost/Project/NewsToday/upload/advertising/' . $data['image'];
+        $data['image'] = 'https://phpstack-1546894-5983648.cloudwaysapps.com/upload/advertising/' . $data['image'];
         $row[] = $data;
     }
     echo json_encode(['data' => $row, 'status' => true, 'des' => '']);
